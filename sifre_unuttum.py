@@ -14,15 +14,15 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form_3(object):
     def setupUi(self, Form_3):
         Form_3.setObjectName("Form_3")
-        Form_3.resize(441, 581)
+        Form_3.resize(441, 587)
         self.widget_2 = QtWidgets.QWidget(Form_3)
-        self.widget_2.setGeometry(QtCore.QRect(0, 0, 441, 581))
+        self.widget_2.setGeometry(QtCore.QRect(0, 0, 441, 591))
         self.widget_2.setStyleSheet("background-color: #292f45;\n"
 "    color: #000000;\n"
 "    border-color: #000000;")
         self.widget_2.setObjectName("widget_2")
         self.kaydet = QtWidgets.QPushButton(self.widget_2)
-        self.kaydet.setGeometry(QtCore.QRect(220, 500, 141, 51))
+        self.kaydet.setGeometry(QtCore.QRect(220, 510, 141, 51))
         self.kaydet.setMinimumSize(QtCore.QSize(141, 51))
         font = QtGui.QFont()
         font.setFamily("Georgia")
@@ -198,7 +198,7 @@ class Ui_Form_3(object):
         self.hata_mesaji.setFont(font)
         self.hata_mesaji.setStyleSheet("background-color:rgba(0,0,0,0);\n"
 "border:none;\n"
-"color:rgba(255,255,255,230);\n"
+"color: rgb(255, 0, 0);\n"
 "padding-bottom:7px;")
         self.hata_mesaji.setText("")
         self.hata_mesaji.setObjectName("hata_mesaji")

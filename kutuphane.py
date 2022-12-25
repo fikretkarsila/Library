@@ -71,7 +71,9 @@ try:
 
             self.setFixedSize(424,589)
             self.setWindowTitle("Giriş Ekran") # Pencereye başlık ekledik
-            self.setWindowIcon(QIcon("Resimler/user.png")) #Pencereye icon ekledik 
+            self.setWindowIcon(QIcon("Resimler/user.png")) #Pencereye icon ekledik
+
+            self.ui.giris_yap.setShortcut("Return")
 
             #---------------------- Butona tıklandığında -------------------#
             self.ui.giris_yap.clicked.connect(self.kontrol_et)
@@ -1270,6 +1272,9 @@ try:
             self.pencere_sifre_unuttum.setWindowTitle("Şifre Yenile")
             self.pencere_sifre_unuttum.setWindowIcon(QIcon("Resimler/user.png"))
 
+            sifre_unuttum_sayfasi.kaydet.setShortcut("Return")
+            sifre_unuttum_sayfasi.geri_don.setShortcut("Esc")
+
             sifre_unuttum_sayfasi.kaydet.clicked.connect(kaydet_kontrol)
             sifre_unuttum_sayfasi.geri_don.clicked.connect(sayfa_geri_don)
 
@@ -1439,6 +1444,9 @@ try:
 
             self.hide()
             self.pencere.show()
+
+            kayit_sayfasi.kayit_ol.setShortcut("Return")
+            kayit_sayfasi.geri_don.setShortcut("Esc")
 
             kayit_sayfasi.kayit_ol.clicked.connect(kontrol_et)
             kayit_sayfasi.geri_don.clicked.connect(sayfa_geri_don)
